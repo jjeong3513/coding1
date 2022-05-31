@@ -116,13 +116,14 @@ header .inner .main-menu li:hover{
 .inner .menu-list>a:nth-child(3):hover{
     transform: scale(0.9 , 0.9);
 }
-.inner .menu-list .mypage:hover{
-    background-color: #df1111;
-}
-.inner .menu-list .mypage>a:hover{
+
+.inner .menu-list .mypage:hover a{
     background: url('../t-world-img/KakaoTalk_Photo_2022-05-20-13-59-54 002.png') no-repeat 0 -80px ;
 	width: 34px;
 	height: 29px;
+}
+.inner .menu-list .mypage:hover{
+    background-color: #df1111;
 }
 
 /* 마이페이지 안의 상자*/

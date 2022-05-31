@@ -57,5 +57,18 @@
             </div> <!--main-bottom-->
         </header>
     </div>
+    <script>
+        const mypage = document.querySelector('.mypage');
+        const login = document.querySelector('.login-list');
+        const loginList = document.querySelectorAll('.login-list-menu a');
+        
+        mypage.addEventListener('mouseenter', () => {
+            login.style.display = 'grid'
+        })
+       mypage.addEventListener('mouseleave',()=>{
+           login.style.display = 'none'
+       })
+
+    </script>
 </body>
 </html>
