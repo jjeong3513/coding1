@@ -1,0 +1,277 @@
+
+/*header-inner*/
+
+body{position: relative;}
+
+.wrap{
+    min-width: 1920px;
+    width: 100%;
+}
+
+header .inner{
+    width: 1450px;
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(174, 170, 170);
+}
+header .inner .main-menu{
+    width: 600px;
+    display: flex;
+   align-items: center;
+}
+
+header .inner .main-menu li{
+        flex:0 0 auto;
+        padding: 0 5px;
+    }
+
+header .inner .main-menu li a{
+    margin: 0 10px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+}
+
+header .inner .main-menu li:hover{
+    color: #df1111;
+    
+}
+
+
+/*menu-list*/
+
+.inner .logo{
+    width: 50px;
+    height: 50px;
+    background: url(../t-world-img/logo.png) no-repeat ;
+    text-indent: -9999px;
+    font-size: 0;
+    margin-top: 15px;
+    transform: translateX(80px);
+}
+.inner .menu-list{
+    width: 550px;
+    height: 70px;
+    display: flex;
+}
+
+.inner .menu-list>a{
+    display: flex;
+    justify-content: center;
+    flex: 0 0 auto;
+    padding-left: 30px;
+}
+
+.inner .menu-list a:nth-child(3){
+  margin-top: 23px;
+  width: 35px;
+  height: 35px;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+/*mypage*/
+.inner .menu-list .mypage>a{  /*마이페이지 바로 밑에 있는 a만 해당되게 함*/
+    display: block;
+    background: url('../t-world-img/KakaoTalk_Photo_2022-05-20-13-59-54 002.png') no-repeat 0 -40px;
+	width: 40px;
+	height: 29px;
+    text-indent: -9999px;
+    font-size: 0;
+    margin-top: 22px;
+    margin-left: 20px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.inner .menu-list a:nth-child(2)::before{
+    display: block;
+    position: absolute;
+    content: '';
+    width: 1px; 
+    height: 10px;
+    top: 0; left: 0;
+    transform: translate(985px , 30px);
+    background-color: #b9b4b4;
+}
+.inner .menu-list a:nth-child(3)::before{
+    display: block;
+    position: absolute;
+    content: '';
+    width: 1px; 
+    height: 20px;
+    top: 0; left: 0;
+    transform: translate(1120px , 25px);
+    background-color: #b9b4b4;
+}
+
+
+.inner .menu-list>a:first-child:hover{
+	transform: scale(0.9 , 0.9);
+}
+.inner .menu-list>a:nth-child(2):hover{
+    transform: scale(0.9 , 0.9);
+}
+.inner .menu-list>a:nth-child(3):hover{
+    transform: scale(0.9 , 0.9);
+}
+
+.inner .menu-list .mypage:hover a{
+    background: url('../t-world-img/KakaoTalk_Photo_2022-05-20-13-59-54 002.png') no-repeat 0 -80px ;
+	width: 34px;
+	height: 29px;
+}
+.inner .menu-list .mypage:hover{
+    background-color: #df1111;
+}
+
+/* 마이페이지 안의 상자*/
+
+.menu-list .mypage .login-list{
+    border: 1px solid #e0dede;
+    position: absolute;
+    transform: translate(-320px , 19px);
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: auto auto; 
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #9d9999;
+    width: 360px;
+    height: 200px;
+    display: none;
+}
+.inner .menu-list .mypage:hover .login-list{
+    display: grid;  /*블럭으로 열면 그리드가 깨지기 때문에 그리드로 열어야 함*/
+}
+
+.mypage .login-list p{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mypage .login-list .login-list-menu{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap:10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.mypage .login-list .login-list-menu>div{
+    display: inline-block;
+    border: 1px solid #cfcccc;
+    padding: 10px 5px;
+}
+
+.mypage .login-list .login-list-menu>div:first-child{
+    background-color: #df1111;
+    color: #fff;
+    border: transparent;
+}
+
+/*main-banner*/
+
+
+.main-banner{
+    width: 100%;
+}
+
+.main-banner a{
+    display: block;
+}
+.main-banner img:first-child{
+    width: 1500px;
+    height: 500px;
+}
+
+.main-banner a:nth-child(2){
+    display: inline-block;
+    background: url('../t-world-img/btns.png') no-repeat 0 0;
+	width: 90px;
+	height: 90px;
+    text-indent: -9999px;
+    font-size: 0;
+    transform: translateX(20px) translateY(-280px);
+}
+.main-banner a:last-child{
+    display: inline-block;
+    background: url('../t-world-img/btns.png') no-repeat 0 -120px;
+	width: 90px;
+	height: 90px;
+    text-indent: -9999px;
+    font-size: 0;
+    transform: translateX(1220px) translateY(-280px)
+}
+
+.main-banner a:nth-child(2):hover{
+    background: url('../t-world-img/btns.png') no-repeat 0 -241px;
+    width: 90px;
+	height: 90px;
+    transform: translateX(20px) translateY(-280px);
+}
+.main-banner a:last-child:hover{
+    background: url('../t-world-img/btns.png') no-repeat 0 -361px;
+	width: 90px;
+	height: 90px;
+}
+
+
+
+/*main-banner-bottom*/
+.main-banner-bottom{
+    display: flex;
+    height:40px ;
+}
+.main-banner-bottom .main-banner-list{
+    display: flex;
+    background-color: aliceblue;
+    position: relative;
+    transform: translate(150px , -141px);
+    box-sizing: border-box;
+}
+.main-banner-bottom .main-banner-list li{
+    display: block;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 15px 50px;   
+}
+.main-banner-bottom .main-banner-list a::before{   
+    display: block;
+    position: absolute;
+    content: '';
+    width: 1px; 
+    height: 15px;
+    top: 0;
+    transform: translate(-30px , 14px);
+    background-color: #d4d0d0;
+}
+.main-banner-bottom .main-banner-list>li:first-child>a::before{
+    display: none;
+}
+
+
+.main-banner-bottom .main-banner-list li:hover>a::before{  /*li 뒤에 있는 a를 지워주는거기 때문*/
+    display: none;
+}
+.main-banner-bottom .main-bottom-btn{
+    transform: translate(150px, -147px);
+    background: url('../t-world-img/icon_set2.png') no-repeat -29px 0;
+	width: 31px;
+	height: 40px;
+    transform: translate(150px, -142px);
+    text-indent: -9999px;
+}
+.main-banner-bottom .main-banner-list li:hover{
+    background-color: #9d9999;
+    border-top: 4px solid rgb(37, 36, 36);
+    color: #fff;
+    font-weight: bold;
+}
+.main-banner-bottom .main-bottom-btn:active{
+    background: url('../t-world-img/icon_set2.png') no-repeat 0 0;
+	width: 28px;
+	height: 40px;
+}

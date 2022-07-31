@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./study2.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="inner">
+                 <h1 class="logo"><a href="#">logo</a></h1>
+                  <ul class="main-menu">
+                    <li><a href="#">상품서비스</a></li>
+                    <li><a href="#">T다이렉트샵</a></li>
+                    <li><a href="#">T우주</a></li>
+                    <li><a href="#">T멤버십</a></li>
+                    <li><a href="#">T로밍</a></li>
+                    <li><a href="#">혜택/이벤트</a></li>
+                    <li><a href="#">고객지원</a></li>
+                  </ul>
+                    <div class="menu-list" >
+                      <a href="#"><img src="t-world-img/menu1.png"></a>
+                      <a href="#"><img src="t-world-img/menu2.png"></a>
+                      <a href="#"><img src="t-world-img/search.jpeg"></a>
+                      <div class="mypage"><a href="#">마이페이지</a>
+                        <div class="login-list">
+                            <p>하나의 아이디로 다양한 SK텔레콤<br>서비스를 이용하세요.</p>
+                                <div class="login-list-menu">
+                                   <div><a href="#">로그인</a></div>
+                                   <div><a href="#">회원가입</a></div>
+                                   <div><a href="#">간편조회</a></div>
+                                   <div><a href="#">주문확인</a></div>
+                            </div> <!--login-list-->
+                        </div>
+                      </div> <!--mypage-->
+                   </div> <!--menu-list-->
+                   
+            </div> <!--inner-->
+            <div class="main-banner">
+                <a href="#"><img src="t-world-img/banner.jpeg"></a>
+                <a href="#">btn1</a>
+                <a href="#">btn2</a>
+            </div> <!--main-banner-->
+            <div class="main-banner-bottom">
+                <ul class="main-banner-list">
+                    <li><a href="#">에이닷 서비스 출시!</a></li>
+                     <li><a href="#">T다샵 유무선 기획전</a></li>
+                     <li><a href="#">아이폰12 공시지원금 상향</a></li>
+                     <li><a href="#">ZEM 가정의달 프로모션</a></li>
+                     <li><a href="#">22년 골드번호프로모션</a></li>
+                </ul>
+                <button class="main-bottom-btn">btn</button>
+            </div> <!--main-bottom-->
+        </header>
+    </div>
+    <script>
+        const mypage = document.querySelector('.mypage');
+        const login = document.querySelector('.login-list');
+        const loginList = document.querySelectorAll('.login-list-menu a');
+        
+        mypage.addEventListener('mouseenter', () => {
+            login.style.display = 'grid'
+        })
+       mypage.addEventListener('mouseleave',()=>{
+           login.style.display = 'none'
+       })
+
+    </script>
+</body>
+</html>
